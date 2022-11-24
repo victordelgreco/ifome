@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFome</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <img src="https://loja704.com.br/storage/customer/586/logo/gSwY2KPzspxRjdA3H2zYlRAHDBgzW6syWFsQsN9j.png"
+                alt="Logo do iFome">
+            <h2>Eu como tudo isso!</h2>
+        </section>
+
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+
+            <form action="#" method="POST" >
+                <div class="form">
+                <label for="email" >Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required> 
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="endereco">Endereço:</label>
+                <textarea name="endereco" id="endereco" cols="22" rows="4"></textarea>
+            
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha seu lanche:</legend>
+            <select name="lanches" id="lanches">
+                <option value="">Escolha uma opção</option>
+                <optgroup label="Comidas"></optgroup>
+                <option value="acaraje">Acarajé</option>
+                <option value="x-callback">X- Callback</option>
+                <option value="x-chuchu">X-chuchu</option>
+                <option value="pudim">Pudim</option>
+                <optgroup label="Bebidas"></optgroup>
+                <option value="guarana">Guarana Jesus</option>
+                <option value="tamarindo">suco de tamarindo</option>
+                <option value="dollynho">dollynho</option>
+                <option value="cana">Caldo de Cana</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Metodo de pagamento:</legend>
+
+            <input type="radio" name="pagamento" id="dinheiro">
+            <label for="dinheiro">Dinheiro</label>
+            <input type="radio" name="pagamento" id="credito">
+            <label for="credito">Credito</label>
+            <input type="radio" name="pagamento" id="debito">
+            <label for="debito">Debito</label>
+            <input type="radio" name="pagamento" id="PIX" checked>
+            <label for="pix">Pix</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Opcionais</legend>
+
+            <input type="checkbox" name="colher" id="colher">
+            <label for="colher">Colher</label>
+            <input type="checkbox" name="garfo" id="garfo">
+            <label for="garfo">Garfo</label>
+            <input type="checkbox" name="hashi" id="hashi">
+            <label for="hashi">Hashi</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agendar para quando?</legend>
+            <input type="datetime-local" name="data" id="data">
+        </fieldset>
+
+
+        <button type="submit">Pedir</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    </main>
+</body>
+
+</html>
